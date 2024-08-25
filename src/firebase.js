@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-YjRbV3M7W00HlM9IC_JH85_8b416fQI",
-  authDomain: "router-login-bluuweb.firebaseapp.com",
-  projectId: "router-login-bluuweb",
-  storageBucket: "router-login-bluuweb.appspot.com",
-  messagingSenderId: "388982255340",
-  appId: "1:388982255340:web:fd2f9299a8746223163fc9",
-  measurementId: "G-MGWD9Z0LED"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
